@@ -1,0 +1,51 @@
+console.log('Домашнее задание блока 5 - Переводчик')
+console.log('========================')
+
+const preferredLanguage = navigator.language; 
+const random = Math.floor(Math.random() * 2);
+
+
+let sayHello;
+
+switch(preferredLanguage, random) {
+// ------Русский------    
+    case 'ru-RU':
+        case 'ru':
+            case 0:
+                sayHello = 'Привет!';
+                break;
+    case 'ru-RU':
+        case 'ru':
+            case 1:
+                sayHello = 'Шалом!';
+                break;
+// ------Английский------    
+    case 'en-EN':
+        case 'en':
+            case 0:
+                sayHello = 'Hello!';
+                break;
+    case 'en-EN':
+        case 'en':
+            case 1:
+                sayHello = 'Sup!';
+                break;
+// ------Немецкий------    
+    case 'de-DE':
+        case 'de':
+            case 0:
+                sayHello = 'Servus!';
+                break;
+    case 'de-DE':
+        case 'de':
+            case 1:
+                sayHello = 'Gruß!';
+                break;
+// ------Остальное------    
+    default:
+        sayHello = 'Ты человек?'
+}
+
+console.log(sayHello);
+
+console.log('========================')
